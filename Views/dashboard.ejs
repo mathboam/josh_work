@@ -1,0 +1,24 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome USER</p>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Student Name</th>
+        <th scope="col">Student ID</th>
+        <th scope="col">Hall</th>
+        <th scope="col">Room Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach(function(student){ %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.studentID %></td>
+        <td><%= student.hall %></td>
+        <td><%= student.room %></td>
+        <% })%>
+      </tr>
+    
+    </tbody>
+  </table>
+<a href="/users/logout" class="btn btn-primary">Logout</a>
